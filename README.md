@@ -11,7 +11,7 @@
 </p>
 
 <h1>
-  <a href="#objetivo">:dart: Objetivo</a>
+  <a id="objetivo" href="#objetivo">:dart: Objetivo</a>
 </h1>
 <p dir="auto">
   O objetivo do site é informar e apresentar características unicas de cada planeta do nosso sistema solar
