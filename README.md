@@ -19,7 +19,7 @@
 
 <br/>
 
-### 🛠 [Tecnologias](#objetivo)
+### 🛠 [Tecnologias](#tecnologias)
 
 <p dir="auto">
   As seguintes ferramentas foram usadas na construção do projeto
