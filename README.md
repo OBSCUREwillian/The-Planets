@@ -5,8 +5,8 @@
 <p align="center">🚀 Site que apresenta informações sobre os planetas do nosso sistema solar</p>
 
 <p align="center">
- <a href="#objetivo">Objetivo</a> •
- <a href="#tecnologias">Tecnologias</a> • 
+ <a href="#dart-objetivo">Objetivo</a> •
+ <a href="#hammer_and_wrench-tecnologias">Tecnologias</a> • 
  <a href="#autor">Autor</a>
 </p>
 
@@ -19,7 +19,7 @@
 <br/>
 
 
-## [🛠 Tecnologias](#tecnologias)
+## [:hammer_and_wrench: Tecnologias](#tecnologias)
 
 <p dir="auto">
   As seguintes ferramentas foram usadas na construção do projeto
