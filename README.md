@@ -31,7 +31,7 @@
 ## [:dart: Objetivo](#objetivo)
 
 <p dir="auto">
-  'Os Planetas' se consiste em ser um website informativo, onde apresenta as características únicas de cada planeta existente no nosso sistema solar.
+  'Os Planetas' se consiste em ser um website informativo, apresentando as características únicas de cada planeta existente em nosso sistema solar.
 </p>
 
 <br/>
