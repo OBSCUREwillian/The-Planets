@@ -2,7 +2,19 @@
   <a href="https://pt-br.reactjs.org/">🔗 Os Planetas</a>
 </h1>
 
-<p align="center">🚀 Site que apresenta informações sobre os planetas do nosso sistema solar.</p>
+<p align="center">:earth_americas: Site que apresenta informações sobre os planetas do nosso sistema solar.</p>
+
+<h4 align="center"> 
+	🚧  Em construção...  🚧
+</h4>
+
+<p align="center">
+  <a href="https://lbesson.mit-license.org/">
+    <img src="https://img.shields.io/badge/License-MIT-blue.svg"/>
+  </a>
+</p>
+
+<!-- [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/) -->
 
 <p align="center">
  <a href="#dart-objetivo">Objetivo</a> •
@@ -10,11 +22,19 @@
  <a href="#autor">Autor</a>
 </p>
 
+<br/>
+
+![page](https://user-images.githubusercontent.com/68829088/154877132-15f0d622-7052-4367-b86f-b4a0b465169b.gif)
+
+<br/><br/>
+
 ## [:dart: Objetivo](#objetivo)
 
 <p dir="auto">
   'Os Planetas' se consiste em ser um website informativo, onde apresenta as características únicas de cada planeta existente no nosso sistema solar.
 </p>
+
+<br/>
 
 <br/>
 
