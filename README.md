@@ -2,7 +2,7 @@
   <a href="https://pt-br.reactjs.org/">🔗 Os Planetas</a>
 </h1>
 
-<p align="center">🚀 Site que apresenta informações sobre os planetas do nosso sistema solar</p>
+<p align="center">🚀 Site que apresenta informações sobre os planetas do nosso sistema solar.</p>
 
 <p align="center">
  <a href="#dart-objetivo">Objetivo</a> •
@@ -13,7 +13,7 @@
 ## [:dart: Objetivo](#objetivo)
 
 <p dir="auto">
-  O objetivo do site é informar e apresentar características unicas de cada planeta do nosso sistema solar
+  'Os Planetas' se consiste em ser um website informativo, onde apresenta as características únicas de cada planeta existente no nosso sistema solar.
 </p>
 
 <br/>
