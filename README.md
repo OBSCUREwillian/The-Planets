@@ -10,16 +10,16 @@
  <a href="#autor">Autor</a>
 </p>
 
-<h1>
-  <a id="objetivo" href="#objetivo">:dart: Objetivo</a>
-</h1>
+## [:dart: Objetivo](#objetivo)
+
 <p dir="auto">
   O objetivo do site é informar e apresentar características unicas de cada planeta do nosso sistema solar
 </p>
 
 <br/>
 
-### 🛠 [Tecnologias](#tecnologias)
+
+## [🛠 Tecnologias](#tecnologias)
 
 <p dir="auto">
   As seguintes ferramentas foram usadas na construção do projeto
