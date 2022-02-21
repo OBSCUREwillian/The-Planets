@@ -1,5 +1,5 @@
 <h1 align="center">
-  <a href="https://pt-br.reactjs.org/">🔗 Os Planetas</a>
+  <a href="https://the-planets-iota.vercel.app/">🔗 Os Planetas</a>
 </h1>
 
 <p align="center">:earth_americas: Site que apresenta informações sobre os planetas do nosso sistema solar.</p>
