@@ -27,9 +27,6 @@ const Characteristics = ({rotationTime, revolutionTime, radius, averageTemp}) =>
 
         <style jsx>{`
             .container{
-                display: flex;
-                grid-column: 1/13;
-                justify-content: space-between;
                 margin-top: 50px;
             }
 
@@ -60,6 +57,38 @@ const Characteristics = ({rotationTime, revolutionTime, radius, averageTemp}) =>
                 padding-top: 7px;
             }
             
+
+            /* MEDIA QUERY */
+
+            /* Mobile devices */
+            @media (min-width: 320px) and (max-width: 480px){
+                
+            }
+            
+            /* ipads and tablets*/
+            @media (min-width: 481px) and (max-width: 768px){
+
+            }
+            
+            /* Small screen and laptops */
+            @media (min-width: 769px) and (max-width: 1024px){
+
+            }
+
+            /* Large screen and desktops */
+            @media (min-width: 1025px){
+                .container{
+                    display: flex;
+                    grid-column: 1/13;
+                    justify-content: space-between;
+                    margin-top: 50px;
+                }
+            }
+
+            /*Very large screen and TVs */
+            @media (min-width: 1201px){
+                
+            }
             
         `}</style>
     </>)

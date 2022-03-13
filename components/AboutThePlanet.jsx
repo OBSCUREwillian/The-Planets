@@ -67,7 +67,8 @@ const AboutThePlanet = ({overview, internalStructure, surfaceGeology, planet, se
                 margin: 0;
             }
 
-            p{
+            p{  
+                font-size: 12px;
                 line-height: 1.5;
                 font-weight: 300;
                 color: rgb(255, 255, 255, 0.5);
@@ -82,7 +83,8 @@ const AboutThePlanet = ({overview, internalStructure, surfaceGeology, planet, se
             .buttons-container button{
                 margin-bottom: 17px;
                 border: 1px solid rgb(255, 255, 255, 0.15);
-                height: 43px;
+                height: 30px;
+                font-size: 11px;
                 color: white;
                 text-align: left;
                 font-weight: 600;
@@ -94,7 +96,6 @@ const AboutThePlanet = ({overview, internalStructure, surfaceGeology, planet, se
                 padding-left: 20px;
                 padding-right: 20px;
                 color: rgb(255, 255, 255, 0.3);
-
             }
 
 
@@ -106,6 +107,41 @@ const AboutThePlanet = ({overview, internalStructure, surfaceGeology, planet, se
             }
 
             .fonte{
+
+            }
+
+
+
+            /* MEDIA QUERY */
+
+            /* Mobile devices */
+            @media (min-width: 320px) and (max-width: 480px){
+                
+            }
+            
+            /* ipads and tablets*/
+            @media (min-width: 481px) and (max-width: 768px){
+
+            }
+            
+            /* Small screen and laptops */
+            @media (min-width: 769px) and (max-width: 1024px){
+
+            }
+
+            /* Large screen and desktops */
+            @media (min-width: 1025px){
+                p{
+                    font-size: 16px;
+                }
+
+                .buttons-container button{
+                    height: 43px;
+                }
+            }
+
+            /*Very large screen and TVs */
+            @media (min-width: 1201px){
 
             }
 

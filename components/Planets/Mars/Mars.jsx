@@ -22,8 +22,8 @@ const Mars = ({option}) => {
 
             .planet{
                 margin-top: 30px;
-                width: 400px;
-                height:400px;
+                width:  220px;
+                height: 220px;
                 background-color: red;
                 overflow: hidden;
                 border-radius: 50%;
@@ -32,6 +32,40 @@ const Mars = ({option}) => {
                 background-size: 280%;
                 animation: moves 100s linear infinite;
                 position: relative;
+            }
+
+
+
+
+            /* MEDIA QUERY */
+
+            /* Mobile devices */
+            @media (min-width: 320px) and (max-width: 480px){
+                
+            }
+            
+            /* ipads and tablets*/
+            @media (min-width: 481px) and (max-width: 768px){
+
+            }
+            
+            /* Small screen and laptops */
+            @media (min-width: 769px) and (max-width: 1024px){
+
+            }
+
+            /* Large screen and desktops */
+            @media (min-width: 1025px){
+                
+                .planet{
+                    width:  400px;
+                    height: 400px;
+                }
+            }
+
+            /*Very large screen and TVs */
+            @media (min-width: 1201px){
+
             }
 
             @keyframes moves {

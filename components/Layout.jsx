@@ -23,7 +23,7 @@ const Layout = ({children}) => {
             <div>
                 OS PLANETAS
             </div>
-            <Navbar/>
+            {/* <Navbar/> */}
         </header>
 
 
@@ -55,16 +55,48 @@ const Layout = ({children}) => {
             main{
                 display: flex;
                 justify-content: center;
-                margin-top: 100px;
             }
             main div{
-                display: grid;
-                grid-template-columns: repeat(12, 1fr);
-                max-width: 1000px;
+                padding-left: 40px; 
+                padding-right: 40px; 
+                border: 1px solid red;
                 /* border: 1px solid red; */
             }
 
-        
+
+            /* MEDIA QUERY */
+
+            /* Mobile devices */
+            @media (min-width: 320px) and (max-width: 480px){
+                
+            }
+            
+            /* ipads and tablets*/
+            @media (min-width: 481px) and (max-width: 768px){
+
+            }
+            
+            /* Small screen and laptops */
+            @media (min-width: 769px) and (max-width: 1024px){
+
+            }
+
+            /* Large screen and desktops */
+            @media (min-width: 1025px){
+                main div{
+                    padding: 0;
+                    display: grid;
+                    grid-template-columns: repeat(12, 1fr);
+                    max-width: 1000px;
+                }
+            }
+
+            /*Very large screen and TVs */
+            @media (min-width: 1201px){
+
+            }
+
+
         `}</style>
     </>)
 }
