@@ -1,34 +1,60 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h1 align="center">
+  <a href="https://the-planets-iota.vercel.app/">🔗 Os Planetas</a>
+</h1>
 
-## Getting Started
+<p align="center">:earth_americas: Site que apresenta informações sobre os planetas do nosso sistema solar.</p>
 
-First, run the development server:
+<h4 align="center"> 
+	🚧  Em construção...  🚧
+</h4>
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+<p align="center">
+  <a href="https://lbesson.mit-license.org/">
+    <img src="https://img.shields.io/badge/License-MIT-blue.svg"/>
+  </a>
+</p>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<!-- [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/) -->
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+<p align="center">
+ <a href="#dart-objetivo">Objetivo</a> •
+ <a href="#hammer_and_wrench-tecnologias">Tecnologias</a> • 
+ <a href="#autor">Autor</a>
+</p>
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+<br/>
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+![page](https://user-images.githubusercontent.com/68829088/154877132-15f0d622-7052-4367-b86f-b4a0b465169b.gif)
 
-## Learn More
+<br/><br/>
 
-To learn more about Next.js, take a look at the following resources:
+## [:dart: Objetivo](#objetivo)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+<p dir="auto">
+  'Os Planetas' se consiste em ser um website informativo, apresentando as características únicas de cada planeta existente em nosso sistema solar.
+</p>
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+<br/>
 
-## Deploy on Vercel
+<br/>
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## [:hammer_and_wrench: Tecnologias](#tecnologias)
+
+<p dir="auto">
+  As seguintes ferramentas foram usadas na construção do projeto
+</p>
+
+- [Node.js](https://nodejs.org/en/)
+- [Next.js](https://nextjs.org//)
+- [tsParticles](https://particles.js.org/)
+- [styled-jsx](https://github.com/vercel/styled-jsx)
+
+<br/><br/>
+## [Autor](#autor)
+<img style="border-radius: 50%;" width="100px" src="https://avatars.githubusercontent.com/u/68829088?v=4"/><br/>
+<sub>Willian Costa</sub><br/>
+
+Sempre em frente! :zap: Entre em contato!<br/>
+
+[![Linkedin Badge](https://img.shields.io/badge/-Willian_Costa-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/willian-costa-8b9b3518a/)](https://www.linkedin.com/in/willian-costa-8b9b3518a/) 
