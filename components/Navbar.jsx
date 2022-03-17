@@ -1,7 +1,9 @@
 import Link from 'next/link';
 
-const Navbar = () => {
 
+const Navbar = ({open}) => {
+
+    
     return (<>
         
         <ul>
@@ -37,7 +39,7 @@ const Navbar = () => {
         </ul>
 
         <style jsx>{`
-
+            
             ul{
                 padding-left: 20px;
                 top: 0;
@@ -50,7 +52,9 @@ const Navbar = () => {
                 font-size: 0.8em;
                 font-weight: 700;
                 letter-spacing: 1.2px;
-                color: rgb(255, 255, 255, 0.6)
+                color: rgb(255, 255, 255, 0.6);
+                transform: ${open ? 'translateX(0)' : 'translateX(-100%)'};
+                transition: transform 0.3s ease-in-out;
             }
             
             #close-icon{

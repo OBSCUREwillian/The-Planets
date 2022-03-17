@@ -1,8 +1,17 @@
+import React, { useState } from "react";
 
-const Hamburguer = ({open, changeOpen}) => {
+import Navbar from "./Navbar.jsx";
+
+const Hamburguer = () => {
+    const [open, setOpen] = useState(false);
+
+    function changeOpen(){
+        setOpen(!open);
+    }
+
+
     return(<>
         
-
         <div 
             id="hamburguer"
             onClick={()=>changeOpen()}
@@ -11,9 +20,14 @@ const Hamburguer = ({open, changeOpen}) => {
             <span className="hamburguer-line"></span>
         </div>
         
+        <Navbar
+            open={open}
+        />
         
         <style jsx>{`
             #hamburguer{
+                position: relative;
+                z-index: 2;
                 width: 24px;
                 height: 23px;
                 display: flex;

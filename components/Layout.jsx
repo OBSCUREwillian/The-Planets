@@ -1,19 +1,11 @@
 import Head from "next/head";
-import React, { useState } from "react";
 
 // components
 import Hamburguer from "./Hamburguer.jsx";
-import Navbar from "./Navbar.jsx";
 import ParticlesBackground from "./ParticlesBackground.jsx";
 
 const Layout = ({children}) => {
     
-    const [open, setOpen] = useState(false);
-
-    function changeOpen(){
-        setOpen(!open);
-    }
-    console.log(open)
     return(<>
 
         <ParticlesBackground/>
@@ -28,11 +20,8 @@ const Layout = ({children}) => {
         </Head>
 
         <header>
-            {/* <Navbar/>  */}
-            <Hamburguer
-                open={open}
-                changeOpen={changeOpen}
-            />
+            <Hamburguer/>
+
             <div>
                 OS PLANETAS
             </div>
