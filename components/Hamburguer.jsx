@@ -2,13 +2,8 @@ import React, { useState } from "react";
 
 import Navbar from "./Navbar.jsx";
 
-const Hamburguer = () => {
-    const [open, setOpen] = useState(false);
-
-    function changeOpen(){
-        setOpen(!open);
-    }
-
+const Hamburguer = ({open, changeOpen}) => {
+    
 
     return(<>
         

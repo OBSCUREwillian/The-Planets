@@ -3,7 +3,7 @@ import EarthCore from "./EarthCore.jsx";
 const Earth = ({option}) => {
 
     return(<>
-        <div className="container-planet">
+        <section className="container-planet">
             <div className="planet">
                 <img src="img/planets/earth/clouds.png" className="clouds"></img>
 
@@ -12,19 +12,20 @@ const Earth = ({option}) => {
                 })()}
 
             </div>
-        </div>
+        </section>
 
         <style jsx>{`
-            div.container-planet{
+            section.container-planet{
                 display: flex;
                 justify-content: center;
+                align-items: center;
                 grid-column: 1/9;
             }
 
             .planet{
                 margin-top: 30px;
-                width: 400px;
-                height:400px;
+                width: 220px;
+                height: 220px;
                 background-color: #4D52EA;
                 overflow: hidden;
                 border-radius: 50%;
@@ -39,6 +40,48 @@ const Earth = ({option}) => {
                 width: 120%;
                 position: relative;
                 animation: cloudsMoviment 1.9s ease-in infinite;
+            }
+
+
+
+
+            /* MEDIA QUERY */
+            /* Mobile devices */
+            @media (min-width: 320px) and (max-width: 480px){
+                
+            }
+            
+            /* ipads and tablets*/
+            @media (min-width: 481px) and (max-width: 768px){
+                .planet{
+                    width:  280px;
+                    height: 280px;
+                }
+            }
+            
+            /* Small screen and laptops */
+            @media (min-width: 769px) and (max-width: 1024px){
+                section.container-planet{
+                    align-items: center;
+                }
+
+                .planet{
+                    width:  380px;
+                    height: 380px;
+                }
+            }
+
+            /* Large screen and desktops */
+            @media (min-width: 1025px){
+                .planet{
+                    width:  400px;
+                    height: 400px;
+                }
+            }
+
+            /*Very large screen and TVs */
+            @media (min-width: 1201px){
+
             }
             
             @keyframes cloudsMoviment{

@@ -2,17 +2,17 @@ import VenusCore from "./VenusCore.jsx";
 
 const Venus = ({option}) => {
     return(<>
-        <div className="container-planet">
+        <section className="container-planet">
             <div className="planet">
                 {(() => {
                     if(option === 2){ return <VenusCore/> }
                 })()}
 
             </div>
-        </div>
+        </section>
 
         <style jsx>{`
-            div.container-planet{
+            section.container-planet{
                 display: flex;
                 justify-content: center;
                 grid-column: 1/9;
@@ -20,8 +20,8 @@ const Venus = ({option}) => {
 
             .planet{
                 margin-top: 30px;
-                width: 400px;
-                height: 400px;
+                width:  220px;
+                height: 220px;
                 background-color: #FECF68;
                 overflow: hidden;
                 border-radius: 50%;

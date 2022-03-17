@@ -2,17 +2,17 @@ import MercuryCore from "./MercuryCore.jsx";
 
 const Mercury = ({option}) => {
     return(<>
-        <div className="container-planet">
+        <section className="container-planet">
             <div className="planet">
                 {(() => {
                     if(option === 2){ return <MercuryCore/> }
                 })()}
 
             </div>
-        </div>
+        </section>
 
         <style jsx>{`
-            div.container-planet{
+            section.container-planet{
                 display: flex;
                 justify-content: center;
                 grid-column: 1/9;
@@ -20,8 +20,8 @@ const Mercury = ({option}) => {
 
             .planet{
                 margin-top: 30px;
-                width: 400px;
-                height:400px;
+                width:  220px;
+                height: 220px;
                 background-color: #7D4B2B;
                 overflow: hidden;
                 border-radius: 50%;
@@ -30,6 +30,47 @@ const Mercury = ({option}) => {
                 background-size: 280%;
                 animation: moves 150s linear infinite;
                 position: relative;
+            }
+
+
+
+            /* MEDIA QUERY */
+            /* Mobile devices */
+            @media (min-width: 320px) and (max-width: 480px){
+                
+            }
+            
+            /* ipads and tablets*/
+            @media (min-width: 481px) and (max-width: 768px){
+                .planet{
+                    width:  280px;
+                    height: 280px;
+                }
+            }
+            
+            /* Small screen and laptops */
+            @media (min-width: 769px) and (max-width: 1024px){
+                section.container-planet{
+                    align-items: center;
+                }
+
+                .planet{
+                    width:  380px;
+                    height: 380px;
+                }
+            }
+
+            /* Large screen and desktops */
+            @media (min-width: 1025px){
+                .planet{
+                    width:  400px;
+                    height: 400px;
+                }
+            }
+
+            /*Very large screen and TVs */
+            @media (min-width: 1201px){
+
             }
             
 
