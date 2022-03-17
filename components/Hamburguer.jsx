@@ -1,7 +1,13 @@
 
-const Hamburguer = () => {
+const Hamburguer = ({open, changeOpen}) => {
     return(<>
-        <div id="hamburguer">
+        
+
+        <div 
+            id="hamburguer"
+            onClick={()=>changeOpen()}
+            className={open ? 'hamburguer-rotate' : ''}
+        >
             <span className="hamburguer-line"></span>
         </div>
         
@@ -40,6 +46,22 @@ const Hamburguer = () => {
 
             .hamburguer-line::before{
                 top: -7.1px;
+            }
+
+
+
+
+            .hamburguer-rotate .hamburguer-line{
+                transform: rotate(45deg);
+            }
+            
+            .hamburguer-rotate .hamburguer-line::before{
+                transform: rotate(90deg);
+                top: 0px;
+            }
+            .hamburguer-rotate .hamburguer-line::after{
+                transform: rotate(90deg);
+                bottom: 0px;
             }
         
         `}</style>
