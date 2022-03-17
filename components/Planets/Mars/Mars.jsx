@@ -3,7 +3,7 @@ import MarsCore from "./MarsCore.jsx";
 const Mars = ({option}) => {
 
     return(<>
-        <div className="container-planet">
+        <section className="container-planet">
             <div className="planet">
 
                 {(() => {
@@ -11,12 +11,13 @@ const Mars = ({option}) => {
                 })()}
 
             </div>
-        </div>
+        </section>
 
         <style jsx>{`
-            div.container-planet{
+            section.container-planet{
                 display: flex;
                 justify-content: center;
+                align-items: center;
                 grid-column: 1/9;
             }
 
@@ -38,7 +39,6 @@ const Mars = ({option}) => {
 
 
             /* MEDIA QUERY */
-
             /* Mobile devices */
             @media (min-width: 320px) and (max-width: 480px){
                 
@@ -46,17 +46,26 @@ const Mars = ({option}) => {
             
             /* ipads and tablets*/
             @media (min-width: 481px) and (max-width: 768px){
-
+                .planet{
+                    width:  280px;
+                    height: 280px;
+                }
             }
             
             /* Small screen and laptops */
             @media (min-width: 769px) and (max-width: 1024px){
+                section.container-planet{
+                    align-items: center;
+                }
 
+                .planet{
+                    width:  380px;
+                    height: 380px;
+                }
             }
 
             /* Large screen and desktops */
             @media (min-width: 1025px){
-                
                 .planet{
                     width:  400px;
                     height: 400px;

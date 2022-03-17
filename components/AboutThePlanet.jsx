@@ -10,7 +10,7 @@ const AboutThePlanet = ({overview, internalStructure, surfaceGeology, planet, se
 
     return(<>
         
-        <div className="container">
+        <section className="container">
             <h1>{planet}</h1>
 
             {(() => {
@@ -49,21 +49,18 @@ const AboutThePlanet = ({overview, internalStructure, surfaceGeology, planet, se
                 </button>
 
             </div>
-        </div>
+        </section>
 
         <style jsx>{`
-
             .container{
-                grid-column: 9/13;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
+                margin-top: 60px;
             }
+            
 
             h1{
                 font-family: 'Antonio', sans-serif;
                 text-transform: uppercase;
-                font-size: 3vw;
+                font-size: 35px;
                 margin: 0;
             }
 
@@ -72,6 +69,10 @@ const AboutThePlanet = ({overview, internalStructure, surfaceGeology, planet, se
                 line-height: 1.5;
                 font-weight: 300;
                 color: rgb(255, 255, 255, 0.5);
+            }
+
+            .fonte{
+                font-size: 13px;
             }
 
             .buttons-container{
@@ -121,23 +122,53 @@ const AboutThePlanet = ({overview, internalStructure, surfaceGeology, planet, se
             
             /* ipads and tablets*/
             @media (min-width: 481px) and (max-width: 768px){
-
-            }
-            
-            /* Small screen and laptops */
-            @media (min-width: 769px) and (max-width: 1024px){
-
-            }
-
-            /* Large screen and desktops */
-            @media (min-width: 1025px){
                 p{
+                    font-size: 16px;
+                }
+
+                .buttons-container button{
+                    height: 38px;
+                }
+
+            }
+
+
+            /* Small screen and laptops */
+            @media (min-width: 769px){
+
+                .container{
+                    grid-column: 9/13;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    margin-top: 0px;
+
+                }
+                p, .fonte{
                     font-size: 16px;
                 }
 
                 .buttons-container button{
                     height: 43px;
                 }
+
+                h1{
+                    font-size: 45px;
+                }
+            }
+            
+            @media (min-width: 769px) and (max-width: 1024px){
+                .buttons-container button{
+                    font-size: 9px;
+                }
+            }
+
+            
+
+
+            /* Large screen and desktops */
+            @media (min-width: 1025px){
+                
             }
 
             /*Very large screen and TVs */
