@@ -6,6 +6,11 @@ const Navbar = () => {
         
         <ul>
             <li>
+                <div id="close-icon">
+
+                </div>
+            </li>
+            <li>
                 <Link href="/">Mercúrio</Link>
             </li>
             <li>
@@ -32,18 +37,35 @@ const Navbar = () => {
         </ul>
 
         <style jsx>{`
+
             ul{
-                width: 800px;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
+                padding-left: 20px;
+                top: 0;
+                background-color: green;
+                height: 100vh;
+                width: 50vw;
+                position: absolute;
+                z-index: 1;
+                left: 0;
                 font-size: 0.8em;
                 font-weight: 700;
                 letter-spacing: 1.2px;
                 color: rgb(255, 255, 255, 0.6)
             }
+            
+            #close-icon{
+                height: 68px;
+                width: 100%;
+            }
+
             ul li{
                 text-transform: uppercase;
+                padding-bottom: 20px;
+            }
+
+
+            @media (min-width: 769px){
+
             }
         `}</style>
     </>)

@@ -1,6 +1,7 @@
 import Head from "next/head";
 
 // components
+import Hamburguer from "./Hamburguer.jsx";
 import Navbar from "./Navbar.jsx";
 import ParticlesBackground from "./ParticlesBackground.jsx";
 
@@ -20,10 +21,11 @@ const Layout = ({children}) => {
         </Head>
 
         <header>
+            {/* <Navbar/>  */}
+            <Hamburguer/>
             <div>
                 OS PLANETAS
             </div>
-            {/* <Navbar/>  */}
         </header>
 
 
@@ -40,8 +42,9 @@ const Layout = ({children}) => {
 
         <style jsx>{`
             header{
+                position: relative;
                 display: flex;
-                justify-content: space-between;
+                align-items: center;
                 padding: 20px 80px 20px 20px;
                 border-bottom: 1px solid;
                 border-color: rgb(255,255,255, 0.2)
@@ -51,6 +54,7 @@ const Layout = ({children}) => {
                 font-family: 'Antonio', sans-serif;
                 font-weight: 600;
                 font-size: 20px;
+                margin-left: 30px
             }
             main{
                 display: flex;

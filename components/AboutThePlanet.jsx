@@ -7,7 +7,7 @@ const AboutThePlanet = ({overview, internalStructure, surfaceGeology, planet, se
     function changeOption(optionSelected){
         setOption(optionSelected);
     }
-
+    
     return(<>
         
         <section className="container">
