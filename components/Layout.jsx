@@ -12,7 +12,7 @@ const Layout = ({children}) => {
     function changeOpen(){
         setOpen(!open);
     }
-
+    console.log(open)
     return(<>
 
         <ParticlesBackground/>
@@ -26,11 +26,19 @@ const Layout = ({children}) => {
             {/* <link rel="icon" href="/favicon.ico" /> */}
         </Head>
 
+        <div 
+            className={open ? '' : 'display-none'} 
+            id="overlay"
+            onClick={()=>changeOpen()}
+        ></div>
+
         <header>
             <Hamburguer
                 open={open}
                 changeOpen={changeOpen}
             />
+
+
 
             <div>
                 OS PLANETAS
@@ -50,22 +58,36 @@ const Layout = ({children}) => {
 
 
         <style jsx>{`
-           
+
             header{
                 position: relative;
                 display: flex;
                 align-items: center;
                 padding: 20px 80px 20px 20px;
                 border-bottom: 1px solid;
-                border-color: rgb(255,255,255, 0.2)
+                border-color: rgb(255,255,255, 0.2);
+                
             }
 
             header div{
                 font-family: 'Antonio', sans-serif;
                 font-weight: 600;
                 font-size: 20px;
-                margin-left: 30px
+                margin-left: 30px;
             }
+
+            #overlay{
+                width: 100vw;
+                height: 100vh;
+                background-color: rgb(0,0,0,0.5);
+                position: absolute;
+                z-index: 1;
+            }
+
+            .display-none{
+                display: none;
+            }
+
             main{
                 display: flex;
                 justify-content: center;

@@ -17,9 +17,12 @@ const Hamburguer = ({open, changeOpen}) => {
         
         <Navbar
             open={open}
+            changeOpen={changeOpen}
         />
+
         
         <style jsx>{`
+            
             #hamburguer{
                 position: relative;
                 z-index: 2;
@@ -28,6 +31,7 @@ const Hamburguer = ({open, changeOpen}) => {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
+
             }
 
             /* Linhas Hamburguer */
@@ -36,6 +40,8 @@ const Hamburguer = ({open, changeOpen}) => {
                 display: block;
                 background-color: #fff;
                 height: 2px;
+                transition: 0.3s ease-in-out;
+
             }
 
 
@@ -47,6 +53,8 @@ const Hamburguer = ({open, changeOpen}) => {
                 width: 100%;
                 height: 100%;
                 position: absolute;
+                transition: 0.3s ease-in-out;
+
             }
 
             .hamburguer-line::after{

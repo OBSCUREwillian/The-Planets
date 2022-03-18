@@ -1,28 +1,36 @@
 import Link from 'next/link';
 
 
-const Navbar = ({open}) => {
+const Navbar = ({open, changeOpen}) => {
 
-    
+    console.log(open)
     return (<>
         
         <ul>
             <li>
                 <div id="close-icon">
-
+                    
                 </div>
             </li>
-            <li>
-                <Link href="/">Mercúrio</Link>
+            <li >
+                <Link href="/">
+                    <span onClick={()=>changeOpen()}>Mercúrio</span>
+                </Link>
             </li>
             <li>
-                <Link href="/venus">Vênus</Link>
+                <Link href="/venus">
+                    <span onClick={()=>changeOpen()}>Vênus</span>
+                </Link>
             </li>
             <li>
-                <Link href="/terra">Terra</Link>
+                <Link href="/terra">
+                    <span onClick={()=>changeOpen()}>Terra</span>
+                </Link>
             </li>
             <li>
-                <Link href="/marte"> Marte </Link>
+                <Link href="/marte">
+                    <span onClick={()=>changeOpen()}>Marte</span>
+                </Link>
             </li>
             <li>
                 Júpiter
@@ -39,11 +47,14 @@ const Navbar = ({open}) => {
         </ul>
 
         <style jsx>{`
+            :global(body){
+                overflow: ${open? 'hidden' : ''}
+            }
             
             ul{
                 padding-left: 20px;
                 top: 0;
-                background-color: green;
+                background-color: rgb(13, 13, 68);
                 height: 100vh;
                 width: 50vw;
                 position: absolute;

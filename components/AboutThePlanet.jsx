@@ -54,6 +54,7 @@ const AboutThePlanet = ({overview, internalStructure, surfaceGeology, planet, se
         <style jsx>{`
             .container{
                 margin-top: 60px;
+                
             }
             
 
