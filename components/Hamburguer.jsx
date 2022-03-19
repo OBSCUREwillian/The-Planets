@@ -4,7 +4,7 @@ import Navbar from "./Navbar.jsx";
 
 const Hamburguer = ({open, changeOpen}) => {
     
-
+    
     return(<>
         
         <div 

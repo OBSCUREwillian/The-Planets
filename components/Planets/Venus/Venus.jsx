@@ -33,6 +33,44 @@ const Venus = ({option}) => {
                 border: none;
             }
             
+            /* MEDIA QUERY */
+            /* Mobile devices */
+            @media (min-width: 320px) and (max-width: 480px){
+                
+            }
+            
+            /* ipads and tablets*/
+            @media (min-width: 481px) and (max-width: 768px){
+                .planet{
+                    width:  280px;
+                    height: 280px;
+                }
+            }
+            
+            /* Small screen and laptops */
+            @media (min-width: 769px) and (max-width: 1024px){
+                section.container-planet{
+                    align-items: center;
+                }
+
+                .planet{
+                    width:  380px;
+                    height: 380px;
+                }
+            }
+
+            /* Large screen and desktops */
+            @media (min-width: 1025px){
+                .planet{
+                    width:  400px;
+                    height: 400px;
+                }
+            }
+
+            /*Very large screen and TVs */
+            @media (min-width: 1201px){
+
+            }
 
             @keyframes moves {
                 0% {

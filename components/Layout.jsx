@@ -2,8 +2,9 @@ import Head from "next/head";
 import React, { useState } from "react";
 
 // components
-import Hamburguer from "./Hamburguer.jsx";
 import ParticlesBackground from "./ParticlesBackground.jsx";
+import Hamburguer from "./Hamburguer.jsx";
+import HorizontalNav from "./HorizontalNav.jsx";
 
 const Layout = ({children}) => {
 
@@ -12,7 +13,7 @@ const Layout = ({children}) => {
     function changeOpen(){
         setOpen(!open);
     }
-    console.log(open)
+
     return(<>
 
         <ParticlesBackground/>
@@ -33,15 +34,21 @@ const Layout = ({children}) => {
         ></div>
 
         <header>
-            <Hamburguer
-                open={open}
-                changeOpen={changeOpen}
-            />
+            <div id="container-hamburguer">
+                <Hamburguer
+                    open={open}
+                    changeOpen={changeOpen}
+                />
+            </div>
 
-
-
-            <div>
+            
+            <div id="logo">
                 OS PLANETAS
+            </div>
+
+
+            <div id="container-horizontal-nav">
+                <HorizontalNav/>
             </div>
         </header>
 
@@ -66,14 +73,21 @@ const Layout = ({children}) => {
                 padding: 20px 80px 20px 20px;
                 border-bottom: 1px solid;
                 border-color: rgb(255,255,255, 0.2);
-                
             }
 
-            header div{
+            #logo{
                 font-family: 'Antonio', sans-serif;
                 font-weight: 600;
                 font-size: 20px;
-                margin-left: 30px;
+                white-space: nowrap;
+                padding-right: 10px;
+            }
+
+            #container-horizontal-nav{
+                position: relative;
+                width: 100%;
+                max-width: 600px;
+                margin-left: auto;
             }
 
             #overlay{
@@ -84,9 +98,12 @@ const Layout = ({children}) => {
                 z-index: 1;
             }
 
-            .display-none{
-                display: none;
+            #container-hamburguer{
+                padding-right: 30px;
             }
+
+
+            
 
             main{
                 display: flex;
@@ -113,8 +130,14 @@ const Layout = ({children}) => {
                     padding-left:  30px ;
                     padding-right: 30px ;
                 }
-                header div{
+                #logo{
                     font-size: 30px;
+                }
+            }
+
+            @media (max-width: 768px){
+                #container-horizontal-nav{
+                    display: none;
                 }
             }
             
@@ -125,9 +148,15 @@ const Layout = ({children}) => {
                     padding-right: 40px ;
                 }
 
-                header div{
+                #logo{
                     font-size: 38px;
                 }
+
+                #overlay, #container-hamburguer{
+                    display: none;
+                }
+
+                
                 main{
                     align-items: center;
                     height: 70vh;
