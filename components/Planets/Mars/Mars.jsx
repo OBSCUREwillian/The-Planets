@@ -31,7 +31,7 @@ const Mars = ({option}) => {
                 background-image: url(img/planets/mars/mars.png);
                 background-repeat: repeat-x;
                 background-size: 280%;
-                animation: moves 100s linear infinite;
+                animation: moves 150s linear infinite;
                 position: relative;
             }
 
@@ -41,7 +41,9 @@ const Mars = ({option}) => {
             /* MEDIA QUERY */
             /* Mobile devices */
             @media (min-width: 320px) and (max-width: 480px){
-                
+                .planet{
+                    animation-duration: 200s;
+                }
             }
             
             /* ipads and tablets*/

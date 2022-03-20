@@ -48,7 +48,9 @@ const Earth = ({option}) => {
             /* MEDIA QUERY */
             /* Mobile devices */
             @media (min-width: 320px) and (max-width: 480px){
-                
+                .planet{
+                    animation-duration: 20s;
+                }
             }
             
             /* ipads and tablets*/

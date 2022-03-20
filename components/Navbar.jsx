@@ -98,7 +98,7 @@ const Navbar = ({open, changeOpen}) => {
                 text-transform: uppercase;
                 padding-bottom: 20px;
             }
-            
+
             ul li span{
                 cursor: pointer;
             }
@@ -111,9 +111,6 @@ const Navbar = ({open, changeOpen}) => {
                 color: white;
             }
 
-            @media (min-width: 769px){
-
-            }
         `}</style>
     </>)
 }

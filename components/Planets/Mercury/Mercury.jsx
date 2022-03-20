@@ -7,7 +7,6 @@ const Mercury = ({option}) => {
                 {(() => {
                     if(option === 2){ return <MercuryCore/> }
                 })()}
-
             </div>
         </section>
 
@@ -37,7 +36,9 @@ const Mercury = ({option}) => {
             /* MEDIA QUERY */
             /* Mobile devices */
             @media (min-width: 320px) and (max-width: 480px){
-                
+                .planet{
+                    animation-duration: 250s;
+                }
             }
             
             /* ipads and tablets*/

@@ -36,7 +36,9 @@ const Venus = ({option}) => {
             /* MEDIA QUERY */
             /* Mobile devices */
             @media (min-width: 320px) and (max-width: 480px){
-                
+                .planet{
+                    animation-duration: 70s;
+                }
             }
             
             /* ipads and tablets*/

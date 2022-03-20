@@ -118,7 +118,7 @@ const Layout = ({children}) => {
 
 
             /* MEDIA QUERY */
-
+            
             /* Mobile devices */
             @media (min-width: 320px) and (max-width: 480px){
                 
@@ -159,8 +159,7 @@ const Layout = ({children}) => {
                 
                 main{
                     align-items: center;
-                    height: 70vh;
-                    margin-top: 0px;
+                    margin-top: 100px;
                 }
                 main div{
                     padding: 0;
