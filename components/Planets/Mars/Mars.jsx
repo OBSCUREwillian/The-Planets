@@ -17,7 +17,6 @@ const Mars = ({option}) => {
             section.container-planet{
                 display: flex;
                 justify-content: center;
-                align-items: center;
                 grid-column: 1/9;
             }
 
