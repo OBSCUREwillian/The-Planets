@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const AboutThePlanet = ({overview, internalStructure, surfaceGeology, planet, setOption, option}) => {
+const AboutThePlanet = ({name, overview, internalStructure, surfaceGeology, setOption, option}) => {
 
     // const [option, setOption] = useState(1);
     
@@ -11,7 +11,7 @@ const AboutThePlanet = ({overview, internalStructure, surfaceGeology, planet, se
     return(<>
         
         <section className="container">
-            <h1>{planet}</h1>
+            <h1>{name}</h1>
 
             {(() => {
                 switch (option) {
@@ -36,15 +36,25 @@ const AboutThePlanet = ({overview, internalStructure, surfaceGeology, planet, se
 
             <div className="buttons-container">
 
-                <button className={option === 1 ? "isActive" : "notActive"} onClick={ ()=> changeOption(1) }>
+                <button 
+                    className={option === 1 ? "isActive" : "notActive"}
+                    onClick={ ()=> changeOption(1) }
+                >
+
                     <span>01</span> VISÃO GERAL
                 </button>
 
-                <button className={option === 2 ? "isActive" : "notActive"} onClick={ ()=>changeOption(2) }>
+                <button 
+                    className={option === 2 ? "isActive" : "notActive"}
+                    onClick={ ()=>changeOption(2) }
+                >
                     <span>02</span> ESTRUTURA INTERNA
                 </button>
 
-                <button className={option === 3 ? "isActive" : "notActive"} onClick={ ()=>changeOption(3) }>
+                <button 
+                    className={option === 3 ? "isActive" : "notActive"} 
+                    onClick={ ()=>changeOption(3) }
+                >
                     <span>03</span> GEOLOGIA DA SUPERFÍCIE
                 </button>
 
@@ -56,7 +66,6 @@ const AboutThePlanet = ({overview, internalStructure, surfaceGeology, planet, se
                 margin-top: 60px;
                 
             }
-            
 
             h1{
                 font-family: 'Antonio', sans-serif;

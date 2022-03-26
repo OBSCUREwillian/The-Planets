@@ -1,4 +1,5 @@
 const Characteristics = ({rotationTime, revolutionTime, radius, averageTemp}) => {
+
     return (<>
 
         <section className='container'>

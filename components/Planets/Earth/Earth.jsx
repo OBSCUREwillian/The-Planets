@@ -8,9 +8,8 @@ const Earth = ({option}) => {
                 <div id="background-planet">
                     <img src="img/planets/earth/clouds.png" className="clouds"></img>
 
-                    {(() => {
-                        if(option === 2){ return <EarthCore/> }
-                    })()}
+                    {option === 2 ? <EarthCore/> : ''}
+
                 </div>
 
             </div>

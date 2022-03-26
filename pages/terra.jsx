@@ -23,8 +23,6 @@ export default function Terra(){
             averageTemp: '16°C'
         }
     }
-
-    const {name, overview, internalStructure, surfaceGeology, characteristics:{rotationTime, revolutionTime, radius, averageTemp}} = planet
     
 
     const [option, setOption] = useState(1);
@@ -36,19 +34,13 @@ export default function Terra(){
         />
 
         <AboutThePlanet
-            planet = {name}
-            overview = {overview}
-            internalStructure = {internalStructure}
-            surfaceGeology = {surfaceGeology}
+            {...planet}
             setOption = {setOption}
             option = {option}
         />
 
         <Characteristics
-            rotationTime={rotationTime}
-            revolutionTime={revolutionTime}
-            radius={radius}
-            averageTemp={averageTemp}
+            {...planet.characteristics}
         />
 
     </>);

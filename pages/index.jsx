@@ -7,6 +7,7 @@ import Characteristics from "../components/Characteristics.jsx";
 import Mercury from "../components/Planets/Mercury/Mercury.jsx";
 
 export default function Mercurio(){
+    
     const planet = {
         name: 'Mercúrio',
 
@@ -24,8 +25,6 @@ export default function Mercurio(){
         }
     }
 
-    const {name, overview, internalStructure, surfaceGeology, characteristics:{rotationTime, revolutionTime, radius, averageTemp}} = planet
-
 
     const [option, setOption] = useState(1);
 
@@ -36,19 +35,14 @@ export default function Mercurio(){
         />
 
         <AboutThePlanet
-            planet = {name}
-            overview = {overview}
-            internalStructure = {internalStructure}
-            surfaceGeology = {surfaceGeology}
+            {...planet}
             setOption = {setOption}
             option = {option}
         />
 
         <Characteristics
-            rotationTime={rotationTime}
-            revolutionTime={revolutionTime}
-            radius={radius}
-            averageTemp={averageTemp}
+            {...planet.characteristics}
         />
+
     </>);
 }

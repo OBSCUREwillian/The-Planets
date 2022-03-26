@@ -4,9 +4,9 @@ const Mercury = ({option}) => {
     return(<>
         <section className="container-planet">
             <div className="planet">
-                {(() => {
-                    if(option === 2){ return <MercuryCore/> }
-                })()}
+                
+                {option === 2 ? <MercuryCore/> : ''}
+
             </div>
         </section>
 
