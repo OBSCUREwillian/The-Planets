@@ -1,12 +1,11 @@
-import MarsCore from "./MarsCore.jsx";
+import MercuryCore from "./MercuryCore.jsx";
 
-const Mars = ({option}) => {
-
+const MercuryPlanet = ({option}) => {
     return(<>
         <section className="container-planet">
-            <div className="planet">    
+            <div className="planet">
                 
-                {option === 2 ? <MarsCore/> : ''}
+                {option === 2 ? <MercuryCore/> : ''}
 
             </div>
         </section>
@@ -22,10 +21,10 @@ const Mars = ({option}) => {
                 margin-top: 30px;
                 width:  220px;
                 height: 220px;
-                background-color: red;
+                background-color: #7D4B2B;
                 overflow: hidden;
                 border-radius: 50%;
-                background-image: url(img/planets/mars/mars.png);
+                background-image: url(img/planets/mercury/mercury.png);
                 background-repeat: repeat-x;
                 background-size: 280%;
                 animation: moves 150s linear infinite;
@@ -34,12 +33,11 @@ const Mars = ({option}) => {
 
 
 
-
             /* MEDIA QUERY */
             /* Mobile devices */
             @media (min-width: 320px) and (max-width: 480px){
                 .planet{
-                    animation-duration: 200s;
+                    animation-duration: 250s;
                 }
             }
             
@@ -75,6 +73,7 @@ const Mars = ({option}) => {
             @media (min-width: 1201px){
 
             }
+            
 
             @keyframes moves {
                 0% {
@@ -86,7 +85,9 @@ const Mars = ({option}) => {
                 }
             }
         `}</style>
-    </>);
+    </>)
+
+    
 }
 
-export default Mars;
+export default MercuryPlanet;

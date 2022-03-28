@@ -34,20 +34,20 @@ const Navbar = ({open, changeOpen}) => {
                 </Link>
             </li>
             <li>
-                <Link href="/terra">
+                <Link href="/earth">
                     <span 
                         onClick={()=>changeOpen()}
-                        className={router.pathname == "/terra" ? "active" : ""}
+                        className={router.pathname == "/earth" ? "active" : ""}
                     >
                         Terra
                     </span>
                 </Link>
             </li>
             <li>
-                <Link href="/marte">
+                <Link href="/mars">
                     <span 
                         onClick={()=>changeOpen()}
-                        className={router.pathname == "/marte" ? "active" : ""}
+                        className={router.pathname == "/mars" ? "active" : ""}
                     >
                         Marte
                     </span>

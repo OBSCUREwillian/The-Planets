@@ -1,12 +1,12 @@
-import MercuryCore from "./MercuryCore.jsx";
+import VenusCore from "./VenusCore.jsx";
 
-const Mercury = ({option}) => {
+const VenusPlanet = ({option}) => {
     return(<>
         <section className="container-planet">
             <div className="planet">
                 
-                {option === 2 ? <MercuryCore/> : ''}
-
+                {option === 2 ? <VenusCore/> : ''}
+                
             </div>
         </section>
 
@@ -15,29 +15,29 @@ const Mercury = ({option}) => {
                 display: flex;
                 justify-content: center;
                 grid-column: 1/9;
+                border: 1px solid red;
             }
 
             .planet{
                 margin-top: 30px;
                 width:  220px;
                 height: 220px;
-                background-color: #7D4B2B;
+                background-color: #FECF68;
                 overflow: hidden;
                 border-radius: 50%;
-                background-image: url(img/planets/mercury/mercury.png);
+                background-image: url(img/planets/venus/venus.png);
                 background-repeat: repeat-x;
-                background-size: 280%;
-                animation: moves 150s linear infinite;
+                background-size: 270%;
+                animation: moves 45s linear infinite;
                 position: relative;
+                border: none;
             }
-
-
-
+            
             /* MEDIA QUERY */
             /* Mobile devices */
             @media (min-width: 320px) and (max-width: 480px){
                 .planet{
-                    animation-duration: 250s;
+                    animation-duration: 70s;
                 }
             }
             
@@ -73,7 +73,6 @@ const Mercury = ({option}) => {
             @media (min-width: 1201px){
 
             }
-            
 
             @keyframes moves {
                 0% {
@@ -81,7 +80,7 @@ const Mercury = ({option}) => {
                 }
 
                 100% {
-                    background-position: 10000px 0;
+                    background-position: 3240px 0;
                 }
             }
         `}</style>
@@ -90,4 +89,4 @@ const Mercury = ({option}) => {
     
 }
 
-export default Mercury;
+export default VenusPlanet;

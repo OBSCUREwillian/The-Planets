@@ -1,11 +1,10 @@
 import React, { useState } from "react";
 
 // components
-import AboutThePlanet from "../components/AboutThePlanet.jsx";
-import Characteristics from "../components/Characteristics.jsx";
-import Venus from "../components/Planets/Venus/Venus.jsx";
+import PrincipalContent from "../components/PrincipalContent.jsx"
+import VenusPlanet from "../components/Planets/Venus/VenusPlanet.jsx";
 
-export default function VenusPlanet(){
+export default function Venus(){
 
     const planet = {
         name: 'Vênus',
@@ -24,25 +23,17 @@ export default function VenusPlanet(){
         }
     }
 
-    
-
     const [option, setOption] = useState(1);
 
     return (<>
-
-        <Venus
-            option={option}
-        />
-    
-        <AboutThePlanet
-            {...planet}
+        <PrincipalContent
+            planet = {planet}
             setOption = {setOption}
             option = {option}
-        />
-
-        <Characteristics
-            {...planet.characteristics}
-        />
-
+        >
+            <VenusPlanet
+                option={option}
+            />
+        </PrincipalContent>
     </>);
 }

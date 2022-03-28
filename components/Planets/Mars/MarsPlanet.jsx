@@ -1,12 +1,13 @@
-import VenusCore from "./VenusCore.jsx";
+import MarsCore from "./MarsCore.jsx";
 
-const Venus = ({option}) => {
+const MarsPlanet = ({option}) => {
+
     return(<>
         <section className="container-planet">
-            <div className="planet">
+            <div className="planet">    
                 
-                {option === 2 ? <VenusCore/> : ''}
-                
+                {option === 2 ? <MarsCore/> : ''}
+
             </div>
         </section>
 
@@ -21,22 +22,24 @@ const Venus = ({option}) => {
                 margin-top: 30px;
                 width:  220px;
                 height: 220px;
-                background-color: #FECF68;
+                background-color: red;
                 overflow: hidden;
                 border-radius: 50%;
-                background-image: url(img/planets/venus/venus.png);
+                background-image: url(img/planets/mars/mars.png);
                 background-repeat: repeat-x;
-                background-size: 270%;
-                animation: moves 45s linear infinite;
+                background-size: 280%;
+                animation: moves 150s linear infinite;
                 position: relative;
-                border: none;
             }
-            
+
+
+
+
             /* MEDIA QUERY */
             /* Mobile devices */
             @media (min-width: 320px) and (max-width: 480px){
                 .planet{
-                    animation-duration: 70s;
+                    animation-duration: 200s;
                 }
             }
             
@@ -79,13 +82,11 @@ const Venus = ({option}) => {
                 }
 
                 100% {
-                    background-position: 3240px 0;
+                    background-position: 10000px 0;
                 }
             }
         `}</style>
-    </>)
-
-    
+    </>);
 }
 
-export default Venus;
+export default MarsPlanet;

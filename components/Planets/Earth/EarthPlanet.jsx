@@ -1,6 +1,6 @@
 import EarthCore from "./EarthCore.jsx";
 
-const Earth = ({option}) => {
+const EarthPlanet = ({option}) => {
 
     return(<>
         <section className="container-planet">
@@ -156,4 +156,4 @@ const Earth = ({option}) => {
     </>);
 }
 
-export default Earth;
+export default EarthPlanet;

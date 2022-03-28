@@ -26,18 +26,18 @@ const HorizontalNav = () => {
                 </Link>
             </li>
             <li>
-                <Link href="/terra">
+                <Link href="/earth">
                     <span
-                        className={router.pathname == "/terra" ? "active" : ""}
+                        className={router.pathname == "/earth" ? "active" : ""}
                     >
                         Terra
                     </span>
                 </Link>
             </li>
             <li>
-                <Link href="/marte">
+                <Link href="/mars">
                     <span
-                        className={router.pathname == "/marte" ? "active" : ""}
+                        className={router.pathname == "/mars" ? "active" : ""}
                     >
                         Marte
                     </span>

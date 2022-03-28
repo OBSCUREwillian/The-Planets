@@ -2,11 +2,10 @@ import React, { useState } from "react";
 
 
 // components
-import AboutThePlanet from "../components/AboutThePlanet.jsx";
-import Characteristics from "../components/Characteristics.jsx";
-import Mercury from "../components/Planets/Mercury/Mercury.jsx";
+import PrincipalContent from "../components/PrincipalContent.jsx"
+import MercuryPlanet from "../components/Planets/Mercury/MercuryPlanet.jsx";
 
-export default function Mercurio(){
+export default function Mercury(){
     
     const planet = {
         name: 'Mercúrio',
@@ -30,19 +29,14 @@ export default function Mercurio(){
 
     return(<>
 
-        <Mercury
-            option = {option}
-        />
-
-        <AboutThePlanet
-            {...planet}
+        <PrincipalContent
+            planet = {planet}
             setOption = {setOption}
             option = {option}
-        />
-
-        <Characteristics
-            {...planet.characteristics}
-        />
-
+        >
+            <MercuryPlanet
+                option = {option}
+            />
+        </PrincipalContent>
     </>);
 }

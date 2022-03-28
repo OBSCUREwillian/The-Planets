@@ -1,11 +1,10 @@
 import React, { useState } from "react";
 
 // components
-import AboutThePlanet from "../components/AboutThePlanet.jsx";
-import Characteristics from "../components/Characteristics.jsx";
-import Earth from "../components/Planets/Earth/Earth.jsx";
+import PrincipalContent from "../components/PrincipalContent.jsx";
+import EarthPlanet from "../components/Planets/Earth/EarthPlanet.jsx";
 
-export default function Terra(){
+export default function Earth(){
 
     const planet = {
         name: 'Terra',
@@ -23,25 +22,19 @@ export default function Terra(){
             averageTemp: '16°C'
         }
     }
-    
+
 
     const [option, setOption] = useState(1);
-
-    return (<>
     
-        <Earth
-            option = {option}
-        />
-
-        <AboutThePlanet
-            {...planet}
+    return (<>
+        <PrincipalContent
+            planet = {planet}
             setOption = {setOption}
             option = {option}
-        />
-
-        <Characteristics
-            {...planet.characteristics}
-        />
-
+        >
+            <EarthPlanet
+                option = {option}
+            />
+        </PrincipalContent>
     </>);
 }

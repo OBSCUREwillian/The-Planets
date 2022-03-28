@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 
 // components
-import AboutThePlanet from "../components/AboutThePlanet.jsx";
-import Characteristics from "../components/Characteristics.jsx";
-import Mars from "../components/Planets/Mars/Mars.jsx";
+import PrincipalContent from "../components/PrincipalContent.jsx"
+import MarsPlanet from "../components/Planets/Mars/MarsPlanet.jsx";
 
 export default function Marte(){
 
@@ -29,19 +28,15 @@ export default function Marte(){
 
     return (<>
 
-        <Mars
-            option={option}
-        />
-    
-        <AboutThePlanet
-            {...planet}
+        <PrincipalContent
+            planet = {planet}
             setOption = {setOption}
             option = {option}
-        />
-
-        <Characteristics
-            {...planet.characteristics}
-        />
+        >
+            <MarsPlanet
+                option={option}
+            />
+        </PrincipalContent>
 
     </>);
 }
