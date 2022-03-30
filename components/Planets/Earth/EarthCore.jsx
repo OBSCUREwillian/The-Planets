@@ -28,7 +28,6 @@ const EarthCore = () => {
                 top: 0;
                 right: 0;
                 position: absolute;
-                z-index: 2;
             }
             .dark-blue{
                 background-color: #2F2A7A;

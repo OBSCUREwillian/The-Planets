@@ -78,6 +78,8 @@ const Navbar = ({open, changeOpen}) => {
                 background-color: rgb(13, 13, 68);
                 height: 100vh;
                 width: 50vw;
+                max-width: 200px;
+                min-width: 150px;
                 position: absolute;
                 z-index: 1;
                 left: 0;
@@ -109,6 +111,13 @@ const Navbar = ({open, changeOpen}) => {
 
             .active{
                 color: white;
+            }
+
+
+            @media (min-width: 481px) and (max-width: 768px){
+                ul{
+                    padding-left: 30px;
+                }
             }
 
         `}</style>

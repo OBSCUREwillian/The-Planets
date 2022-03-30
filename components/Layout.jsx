@@ -80,7 +80,7 @@ const Layout = ({children}) => {
                 font-weight: 600;
                 font-size: 20px;
                 white-space: nowrap;
-                padding-right: 10px;
+                padding-right: 45px;
             }
 
             #container-horizontal-nav{
@@ -130,6 +130,7 @@ const Layout = ({children}) => {
                     padding-left:  30px ;
                     padding-right: 30px ;
                 }
+
                 #logo{
                     font-size: 30px;
                 }
@@ -140,7 +141,7 @@ const Layout = ({children}) => {
                     display: none;
                 }
             }
-            
+
             /* Small screen and laptops */
             @media (min-width: 769px){
                 header{
@@ -149,7 +150,7 @@ const Layout = ({children}) => {
                 }
 
                 #logo{
-                    font-size: 38px;
+                    font-size: 35px;
                 }
 
                 #overlay, #container-hamburguer{
