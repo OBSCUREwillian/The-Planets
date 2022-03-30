@@ -24,7 +24,6 @@ const MercuryCore = () => {
                 top: 0;
                 right: 0;
                 position: absolute;
-                z-index: 2;
             }
             .dark-blue{
                 background-color: #4F1D0F;

@@ -25,7 +25,6 @@ const MarsCore = () => {
                 top: 0;
                 right: 0;
                 position: absolute;
-                z-index: 2;
             }
             .dark-blue{
                 background-color: #B57C18;
