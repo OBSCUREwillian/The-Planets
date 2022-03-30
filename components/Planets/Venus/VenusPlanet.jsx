@@ -4,8 +4,10 @@ const VenusPlanet = ({option}) => {
     return(<>
         <section className="container-planet">
             <div className="planet">
-                
-                {option === 2 ? <VenusCore/> : ''}
+
+                <div id="background-planet">
+                    {option === 2 ? <VenusCore/> : ''}
+                </div>
                 
             </div>
         </section>
@@ -15,37 +17,42 @@ const VenusPlanet = ({option}) => {
                 display: flex;
                 justify-content: center;
                 grid-column: 1/9;
-                border: 1px solid red;
             }
 
             .planet{
+                display: flex;
                 margin-top: 30px;
-                width:  220px;
+                width: 220px;
                 height: 220px;
                 background-color: #FECF68;
                 overflow: hidden;
                 border-radius: 50%;
+                position: relative;
+            }
+
+            #background-planet{
+                width: 1380px;
+                background-size: 690px 210px;
+                animation: movesMobile 20s linear infinite;
+                position: relative;
+                height: auto;
                 background-image: url(img/planets/venus/venus.png);
                 background-repeat: repeat-x;
-                background-size: 270%;
-                animation: moves 45s linear infinite;
-                position: relative;
-                border: none;
             }
             
             /* MEDIA QUERY */
-            /* Mobile devices */
-            @media (min-width: 320px) and (max-width: 480px){
-                .planet{
-                    animation-duration: 70s;
-                }
-            }
             
             /* ipads and tablets*/
             @media (min-width: 481px) and (max-width: 768px){
                 .planet{
                     width:  280px;
                     height: 280px;
+                }
+
+                #background-planet{
+                    width: 1758px;
+                    background-size: 879px 270px;
+                    animation: movesTablet 20s linear infinite;
                 }
             }
             
@@ -59,6 +66,12 @@ const VenusPlanet = ({option}) => {
                     width:  380px;
                     height: 380px;
                 }
+
+                #background-planet{
+                    width: 2386px;
+                    background-size: 1193px 370px;
+                    animation: moves 20s linear infinite;
+                }
             }
 
             /* Large screen and desktops */
@@ -67,6 +80,12 @@ const VenusPlanet = ({option}) => {
                     width:  400px;
                     height: 400px;
                 }
+
+                #background-planet{
+                    width: 2512px;
+                    background-size: 1256px 390px;
+                    animation: movesLarge 20s linear infinite;
+                }
             }
 
             /*Very large screen and TVs */
@@ -74,15 +93,49 @@ const VenusPlanet = ({option}) => {
 
             }
 
-            @keyframes moves {
+            @keyframes movesMobile {
                 0% {
-                    background-position: 0 0;
+                    background-position: 0 center;
                 }
 
                 100% {
-                    background-position: 3240px 0;
+                    background-position: 690px center;
                 }
             }
+
+
+            @keyframes movesTablet {
+                0% {
+                    background-position: 0 center;
+                }
+
+                100% {
+                    background-position: 879px center;
+                }
+            }
+
+            @keyframes moves {
+                0% {
+                    background-position: 0 center;
+                }
+
+                100% {
+                    background-position: 1193px center;
+                }
+            }
+
+
+            @keyframes movesLarge {
+                0% {
+                    background-position: 0 center;
+                }
+
+                100% {
+                    background-position: 1256px center;
+                }
+            }
+
+
         `}</style>
     </>)
 

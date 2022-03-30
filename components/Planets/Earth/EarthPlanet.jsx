@@ -31,13 +31,12 @@ const EarthPlanet = ({option}) => {
                 overflow: hidden;
                 border-radius: 50%;
                 position: relative;
-                animation-duration: 20s;
             }
 
             #background-planet{
-                width: 800px;
-                background-size: 400px;
-                animation: movesMobile 12s linear infinite;
+                width: 1380px;
+                background-size: 690px 210px;
+                animation: movesMobile 20s linear infinite;
                 position: relative;
                 height: auto;
                 display: flex;
@@ -66,9 +65,9 @@ const EarthPlanet = ({option}) => {
                 }
 
                 #background-planet{
-                    width: 1000px;
-                    background-size: 500px;
-                    animation: movesTablet 12s linear infinite;
+                    width: 1758px;
+                    background-size: 879px 270px;
+                    animation: movesTablet 20s linear infinite;
                 }
             }
             
@@ -84,9 +83,9 @@ const EarthPlanet = ({option}) => {
                 }
 
                 #background-planet{
-                    width: 100%;
-                    background-size: auto;
-                    animation: moves 12s linear infinite;
+                    width: 2386px;
+                    background-size: 1193px 370px;
+                    animation: moves 20s linear infinite;
                 }
             }
 
@@ -98,9 +97,9 @@ const EarthPlanet = ({option}) => {
                 }
 
                 #background-planet{
-                    width: 100%;
-                    background-size: auto;
-                    animation: moves 12s linear infinite;
+                    width: 2512px;
+                    background-size: 1256px 390px;
+                    animation: movesLarge 20s linear infinite;
                 }
             }
 
@@ -123,31 +122,41 @@ const EarthPlanet = ({option}) => {
 
             @keyframes movesMobile {
                 0% {
-                    background-position: 0 0;
+                    background-position: 0 center;
                 }
 
                 100% {
-                    background-position: 400px 0px;
+                    background-position: 690px center;
                 }
             }
 
             @keyframes movesTablet {
                 0% {
-                    background-position: 0 0;
+                    background-position: 0 center;
                 }
 
                 100% {
-                    background-position: 500px 0px;
+                    background-position: 879px center;
                 }
             }
 
             @keyframes moves {
                 0% {
-                    background-position: 0 0;
+                    background-position: 0 center;
                 }
 
                 100% {
-                    background-position: 791px 0px;
+                    background-position: 1193px center;
+                }
+            }
+
+            @keyframes movesLarge {
+                0% {
+                    background-position: 0 center;
+                }
+
+                100% {
+                    background-position: 1256px center;
                 }
             }
 

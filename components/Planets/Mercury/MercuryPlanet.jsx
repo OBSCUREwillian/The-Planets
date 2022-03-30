@@ -4,9 +4,9 @@ const MercuryPlanet = ({option}) => {
     return(<>
         <section className="container-planet">
             <div className="planet">
-                
-                {option === 2 ? <MercuryCore/> : ''}
-
+                <div id="background-planet">
+                    {option === 2 ? <MercuryCore/> : ''}
+                </div>
             </div>
         </section>
 
@@ -18,34 +18,42 @@ const MercuryPlanet = ({option}) => {
             }
 
             .planet{
+                display: flex;
                 margin-top: 30px;
-                width:  220px;
+                width: 220px;
                 height: 220px;
-                background-color: #7D4B2B;
+                background-color: #BCB1A7;
                 overflow: hidden;
                 border-radius: 50%;
-                background-image: url(img/planets/mercury/mercury.png);
-                background-repeat: repeat-x;
-                background-size: 280%;
-                animation: moves 150s linear infinite;
                 position: relative;
             }
+
+            #background-planet{
+                width: 1380px;
+                background-size: 690px 210px;
+                animation: movesMobile 20s linear infinite;
+                position: relative;
+                height: auto;
+                background-image: url(img/planets/mercury/mercury.png);
+                background-repeat: repeat-x;
+            }
+            
 
 
 
             /* MEDIA QUERY */
-            /* Mobile devices */
-            @media (min-width: 320px) and (max-width: 480px){
-                .planet{
-                    animation-duration: 250s;
-                }
-            }
             
             /* ipads and tablets*/
             @media (min-width: 481px) and (max-width: 768px){
                 .planet{
                     width:  280px;
                     height: 280px;
+                }
+
+                #background-planet{
+                    width: 1758px;
+                    background-size: 879px 270px;
+                    animation: movesTablet 20s linear infinite;
                 }
             }
             
@@ -59,6 +67,12 @@ const MercuryPlanet = ({option}) => {
                     width:  380px;
                     height: 380px;
                 }
+
+                #background-planet{
+                    width: 2386px;
+                    background-size: 1193px 370px;
+                    animation: moves 20s linear infinite;
+                }
             }
 
             /* Large screen and desktops */
@@ -66,6 +80,12 @@ const MercuryPlanet = ({option}) => {
                 .planet{
                     width:  400px;
                     height: 400px;
+                }
+
+                #background-planet{
+                    width: 2512px;
+                    background-size: 1256px 390px;
+                    animation: movesLarge 20s linear infinite;
                 }
             }
 
@@ -75,13 +95,45 @@ const MercuryPlanet = ({option}) => {
             }
             
 
-            @keyframes moves {
+            @keyframes movesMobile {
                 0% {
-                    background-position: 0 0;
+                    background-position: 0 center;
                 }
 
                 100% {
-                    background-position: 10000px 0;
+                    background-position: 690px center;
+                }
+            }
+
+
+            @keyframes movesTablet {
+                0% {
+                    background-position: 0 center;
+                }
+
+                100% {
+                    background-position: 879px center;
+                }
+            }
+
+            @keyframes moves {
+                0% {
+                    background-position: 0 center;
+                }
+
+                100% {
+                    background-position: 1193px center;
+                }
+            }
+
+
+            @keyframes movesLarge {
+                0% {
+                    background-position: 0 center;
+                }
+
+                100% {
+                    background-position: 1256px center;
                 }
             }
         `}</style>
