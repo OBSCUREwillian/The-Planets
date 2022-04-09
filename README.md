@@ -45,7 +45,7 @@
   As seguintes ferramentas foram usadas na construção do projeto
 </p>
 
-- [Node.js](https://nodejs.org/en/)
+
 - [Next.js](https://nextjs.org//)
 - [tsParticles](https://particles.js.org/)
 - [styled-jsx](https://github.com/vercel/styled-jsx)
